@@ -1,0 +1,19 @@
+// Place all the styles related to the lists controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+  margin-top: 20px;
+}
+.input-error{
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #FD7067;
+  border-radius: 10px;
+}
+.input-error li{
+  list-style: none;
+  font-weight: bold;
+}
+.table > tbody > tr > td{
+  vertical-align: middle;
+}

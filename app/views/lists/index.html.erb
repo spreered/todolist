@@ -1,0 +1,22 @@
+<div class="container">
+<h2>My to do list</h2>
+<p style="color: red"><%= flash[:alert] %></p>
+<table class="table table-striped">
+  <% @lists.each do |list|%>
+    <tr>
+      <td><%=list.date%></td>
+      <td><%=list.todo%></td>
+      <td><%= link_to "more",list_path(list),class:"btn btn-default"%></td>
+      <td><%= link_to "edit",edit_list_path(list),class:"btn btn-success"%></td>
+      <td>
+        <% if list.date.past? %>
+          <a class="btn btn-danger disabled">delete</a>
+        <% else %>
+          <%=link_to("delete", list_path(list),class:"btn btn-danger", method: :delete , data: { confirm: "Are you sure?"} ) %>
+          <%end%>
+      </td>
+    </tr>
+  <%end%>
+</table>
+<%=link_to "something todo" ,new_list_path, class:"btn btn-primary"%>
+</div>

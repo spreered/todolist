@@ -1,24 +1,7 @@
-# README
+# a simple todo list app in Rails
+- index 列出所有todo list
+- todo list 以時間排序
+- 基本功能：可新增刪除編輯代辦事項
+- 過期事件不能刪除(button disabled)
+- 新增修改欄位檢核
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
